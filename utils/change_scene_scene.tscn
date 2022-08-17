@@ -1,0 +1,150 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://fonts/Acme-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://utils/AppearingText.tscn" type="PackedScene" id=2]
+[ext_resource path="res://utils/change_scene_scene.gd" type="Script" id=3]
+[ext_resource path="res://utils/GuideOrPlay.gd" type="Script" id=4]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 128
+outline_size = 4
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 0.635294, 0.8, 0.854902, 1 )
+polygon = PoolVector2Array( -36, -28, -34, 636, 1079, 633, 1074, -36 )
+
+[node name="ChangeSceneText" type="CenterContainer" parent="." groups=["change_scene_1"]]
+margin_left = 53.0
+margin_top = 145.5
+margin_right = 2381.0
+margin_bottom = 806.5
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.4, 0.4 )
+theme = SubResource( 1 )
+
+[node name="Label" type="Label" parent="ChangeSceneText"]
+margin_left = 1164.0
+margin_top = 249.0
+margin_right = 1164.0
+margin_bottom = 412.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0.109804, 0.184314, 0.670588, 1 )
+custom_colors/font_outline_modulate = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
+
+[node name="MainText1" type="CenterContainer" parent="." groups=["change_scene_2"]]
+margin_left = -308.0
+margin_top = -78.0
+margin_right = 2020.0
+margin_bottom = 583.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.7, 0.7 )
+theme = SubResource( 1 )
+
+[node name="Label" type="Label" parent="MainText1"]
+margin_left = 670.0
+margin_top = 249.0
+margin_right = 1658.0
+margin_bottom = 412.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0.109804, 0.184314, 0.670588, 1 )
+custom_colors/font_outline_modulate = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "¿Qué quieres hacer?"
+align = 1
+valign = 1
+
+[node name="Guide" type="CenterContainer" parent="." groups=["change_scene_2"]]
+margin_left = -313.0
+margin_top = 201.0
+margin_right = 2015.0
+margin_bottom = 862.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.5, 0.5 )
+theme = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Highlight" type="Polygon2D" parent="Guide"]
+position = Vector2( 804, 200 )
+scale = Vector2( 0.32, 0.35 )
+color = Color( 0, 0.0156863, 1, 1 )
+polygon = PoolVector2Array( -107.5, -168.75, -107.5, 896.25, 2360, 896.25, 2360, -168.75 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Guide"]
+position = Vector2( 826, 220 )
+scale = Vector2( 0.3, 0.3 )
+polygon = PoolVector2Array( -107.5, -168.75, -107.5, 896.25, 2360, 896.25, 2360, -168.75 )
+
+[node name="Label" type="Label" parent="Guide"]
+margin_left = 922.0
+margin_top = 249.0
+margin_right = 1405.0
+margin_bottom = 412.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0.109804, 0.184314, 0.670588, 1 )
+custom_colors/font_outline_modulate = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Aprender"
+align = 1
+valign = 1
+
+[node name="Play" type="CenterContainer" parent="." groups=["change_scene_2"]]
+margin_left = 184.0
+margin_top = 201.0
+margin_right = 2512.0
+margin_bottom = 862.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.5, 0.5 )
+theme = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Highlight" type="Polygon2D" parent="Play"]
+position = Vector2( 804, 200 )
+scale = Vector2( 0.32, 0.35 )
+color = Color( 0, 0.0156863, 1, 1 )
+polygon = PoolVector2Array( -107.5, -168.75, -107.5, 896.25, 2360, 896.25, 2360, -168.75 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="Play"]
+position = Vector2( 826, 220 )
+scale = Vector2( 0.3, 0.3 )
+polygon = PoolVector2Array( -107.5, -168.75, -107.5, 896.25, 2360, 896.25, 2360, -168.75 )
+
+[node name="Label" type="Label" parent="Play"]
+margin_left = 1023.0
+margin_top = 249.0
+margin_right = 1304.0
+margin_bottom = 412.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0.109804, 0.184314, 0.670588, 1 )
+custom_colors/font_outline_modulate = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Jugar"
+align = 1
+valign = 1
+
+[node name="AppearingText" parent="." instance=ExtResource( 2 )]

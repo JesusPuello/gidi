@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/perfect.mp3-10e4491cc974683e2f976486ddce3098.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/perfect.mp3"
+dest_files=[ "res://.import/perfect.mp3-10e4491cc974683e2f976486ddce3098.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

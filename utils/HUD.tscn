@@ -1,0 +1,337 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://fonts/Acme-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://utils/HUD.gd" type="Script" id=2]
+[ext_resource path="res://sound_effects/correct_answer.mp3" type="AudioStream" id=3]
+[ext_resource path="res://sound_effects/mistake.mp3" type="AudioStream" id=4]
+[ext_resource path="res://sound_effects/new_zone.mp3" type="AudioStream" id=5]
+[ext_resource path="res://sound_effects/victory.mp3" type="AudioStream" id=6]
+[ext_resource path="res://utils/VolumeChanger.gd" type="Script" id=7]
+[ext_resource path="res://sound_effects/accept.mp3" type="AudioStream" id=8]
+[ext_resource path="res://utils/settings.png" type="Texture" id=9]
+[ext_resource path="res://sound_effects/perfect.mp3" type="AudioStream" id=10]
+[ext_resource path="res://utils/VoiceToggle.gd" type="Script" id=11]
+[ext_resource path="res://utils/Settings.gd" type="Script" id=12]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 128
+outline_size = 4
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 105, 103.333 )
+
+[node name="Node2D" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Score" type="CenterContainer" parent="."]
+margin_left = 262.0
+margin_top = -139.0
+margin_right = 1202.0
+margin_bottom = 291.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource( 1 )
+
+[node name="Label" type="Label" parent="Score"]
+margin_left = 433.0
+margin_top = 133.0
+margin_right = 506.0
+margin_bottom = 296.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0.129412, 0.670588, 0.109804, 1 )
+custom_colors/font_outline_modulate = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Mistakes" type="CenterContainer" parent="."]
+margin_left = 401.0
+margin_top = -139.0
+margin_right = 1341.0
+margin_bottom = 291.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource( 1 )
+
+[node name="Label" type="Label" parent="Mistakes"]
+margin_left = 433.0
+margin_top = 133.0
+margin_right = 506.0
+margin_bottom = 296.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0.670588, 0.160784, 0.109804, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Menu" type="Node2D" parent="."]
+position = Vector2( 48, 0 )
+z_index = 1
+
+[node name="Polygon2D2" type="Polygon2D" parent="Menu"]
+position = Vector2( 117, 80.6747 )
+scale = Vector2( 0.31, 0.36 )
+color = Color( 0.113725, 0.227451, 0.211765, 1 )
+polygon = PoolVector2Array( -107.5, -168.75, -107.5, 896.25, 2360, 896.25, 2360, -168.75 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Menu"]
+position = Vector2( 128, 87.6747 )
+scale = Vector2( 0.3, 0.339554 )
+color = Color( 0.823529, 0.956863, 0.952941, 1 )
+polygon = PoolVector2Array( -107.5, -168.75, -107.5, 896.25, 2360, 896.25, 2360, -168.75 )
+
+[node name="Label" type="Label" parent="Menu"]
+margin_left = 366.0
+margin_top = 29.0
+margin_right = 651.0
+margin_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.5, 0.5 )
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0.0156863, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Menú"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="Menu"]
+margin_left = 240.0
+margin_top = 124.0
+margin_right = 1054.0
+margin_bottom = 287.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.2, 0.2 )
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0.0156863, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Volumen Global"
+align = 1
+valign = 1
+
+[node name="Label3" type="Label" parent="Menu"]
+margin_left = 240.0
+margin_top = 161.0
+margin_right = 1054.0
+margin_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.2, 0.2 )
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0.0156863, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Volumen Pasos"
+align = 1
+valign = 1
+
+[node name="Label4" type="Label" parent="Menu"]
+margin_left = 233.0
+margin_top = 201.0
+margin_right = 1088.0
+margin_bottom = 364.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.2, 0.2 )
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0.0156863, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Volumen Alertas"
+align = 1
+valign = 1
+
+[node name="Label5" type="Label" parent="Menu"]
+margin_left = 215.0
+margin_top = 241.0
+margin_right = 1174.0
+margin_bottom = 404.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.2, 0.2 )
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0.0156863, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Volumen Selección"
+align = 1
+valign = 1
+
+[node name="Label6" type="Label" parent="Menu"]
+margin_left = 239.0
+margin_top = 281.0
+margin_right = 1198.0
+margin_bottom = 444.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.2, 0.2 )
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0.0156863, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Volumen Voz"
+align = 1
+valign = 1
+
+[node name="Label7" type="Label" parent="Menu"]
+margin_left = 239.0
+margin_top = 337.0
+margin_right = 1198.0
+margin_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.2, 0.2 )
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0.0156863, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Leer preguntas"
+align = 1
+valign = 1
+
+[node name="GeneralVolume" type="HSlider" parent="Menu"]
+margin_left = 411.0
+margin_top = 116.0
+margin_right = 697.0
+margin_bottom = 164.0
+max_value = 1.0
+step = 0.05
+script = ExtResource( 7 )
+
+[node name="StepsVolume" type="HSlider" parent="Menu"]
+margin_left = 411.0
+margin_top = 154.0
+margin_right = 697.0
+margin_bottom = 202.0
+max_value = 1.0
+step = 0.05
+script = ExtResource( 7 )
+
+[node name="AlertsVolume" type="HSlider" parent="Menu"]
+margin_left = 411.0
+margin_top = 194.0
+margin_right = 697.0
+margin_bottom = 242.0
+max_value = 1.0
+step = 0.05
+script = ExtResource( 7 )
+
+[node name="SelectVolume" type="HSlider" parent="Menu"]
+margin_left = 411.0
+margin_top = 234.0
+margin_right = 697.0
+margin_bottom = 282.0
+max_value = 1.0
+step = 0.05
+script = ExtResource( 7 )
+
+[node name="VoiceVolume" type="HSlider" parent="Menu"]
+margin_left = 411.0
+margin_top = 274.0
+margin_right = 697.0
+margin_bottom = 322.0
+max_value = 1.0
+step = 0.05
+script = ExtResource( 7 )
+
+[node name="VoiceToggle" type="CheckBox" parent="Menu"]
+margin_left = 429.0
+margin_top = 342.0
+margin_right = 453.0
+margin_bottom = 366.0
+focus_mode = 1
+enabled_focus_mode = 1
+script = ExtResource( 11 )
+
+[node name="Quit" type="Button" parent="Menu"]
+margin_left = 707.0
+margin_top = 363.0
+margin_right = 828.0
+margin_bottom = 383.0
+text = "SALIR DEL JUEGO"
+
+[node name="Return" type="Button" parent="Menu"]
+margin_left = 591.0
+margin_top = 363.0
+margin_right = 688.0
+margin_bottom = 383.0
+text = "VOLVER"
+
+[node name="CorrectAnswer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+bus = "Alerts"
+
+[node name="Mistake" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+bus = "Alerts"
+
+[node name="NewZone" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "Alerts"
+
+[node name="Victory" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+bus = "Alerts"
+
+[node name="Perfect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+bus = "Alerts"
+
+[node name="Select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -15.0
+bus = "Select"
+
+[node name="Settings" type="Area2D" parent="."]
+position = Vector2( 937, 524 )
+scale = Vector2( 0.3, 0.3 )
+script = ExtResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Settings"]
+position = Vector2( 118.333, 110 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Settings"]
+position = Vector2( 116.667, 113.333 )
+texture = ExtResource( 9 )
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[connection signal="mouse_exited" from="Menu/GeneralVolume" to="Menu/GeneralVolume" method="_on_mouse_exited"]
+[connection signal="value_changed" from="Menu/GeneralVolume" to="Menu/GeneralVolume" method="_on_value_changed"]
+[connection signal="mouse_exited" from="Menu/StepsVolume" to="Menu/StepsVolume" method="_on_mouse_exited"]
+[connection signal="value_changed" from="Menu/StepsVolume" to="Menu/StepsVolume" method="_on_value_changed"]
+[connection signal="mouse_exited" from="Menu/AlertsVolume" to="Menu/AlertsVolume" method="_on_mouse_exited"]
+[connection signal="value_changed" from="Menu/AlertsVolume" to="Menu/AlertsVolume" method="_on_value_changed"]
+[connection signal="mouse_exited" from="Menu/SelectVolume" to="Menu/SelectVolume" method="_on_mouse_exited"]
+[connection signal="value_changed" from="Menu/SelectVolume" to="Menu/SelectVolume" method="_on_value_changed"]
+[connection signal="mouse_exited" from="Menu/VoiceVolume" to="Menu/VoiceVolume" method="_on_mouse_exited"]
+[connection signal="value_changed" from="Menu/VoiceVolume" to="Menu/VoiceVolume" method="_on_value_changed"]
+[connection signal="toggled" from="Menu/VoiceToggle" to="Menu/VoiceToggle" method="_on_VoiceToggle_toggled"]
+[connection signal="pressed" from="Menu/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="Menu/Return" to="Settings" method="_on_Return_pressed"]
+[connection signal="input_event" from="Settings" to="." method="_on_Settings_input_event"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]

@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://fonts/Acme-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://utils/Guide.gd" type="Script" id=2]
+[ext_resource path="res://utils/whiteboard.png" type="Texture" id=4]
+
+[sub_resource type="Theme" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 128
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="ImageTexture" id=3]
+
+[node name="InformationBody" type="Node2D"]
+position = Vector2( 512, 300 )
+scale = Vector2( 2.5, 2.5 )
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.666565, -19.7336 )
+rotation = 3.14159
+scale = Vector2( 0.590732, 0.379924 )
+texture = ExtResource( 4 )
+
+[node name="TextBody" type="CenterContainer" parent="."]
+margin_left = -60.0
+margin_top = -31.0
+margin_right = 3116.0
+margin_bottom = 399.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.05, 0.05 )
+theme = SubResource( 2 )
+
+[node name="Polygon2D" type="Polygon2D" parent="TextBody"]
+position = Vector2( 306.059, 27.9991 )
+scale = Vector2( 11.0035, 5.23365 )
+polygon = PoolVector2Array( -14, -17, -14, 90, 258, 90, 258, 34.6719, 258, -17 )
+
+[node name="Label" type="Label" parent="TextBody"]
+margin_left = 782.0
+margin_top = 133.0
+margin_right = 2393.0
+margin_bottom = 296.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Este texto crece adecuadamente"
+align = 1
+valign = 1
+
+[node name="Objeto" type="Sprite" parent="."]
+position = Vector2( -118.4, -19.8 )
+scale = Vector2( 0.35, 0.35 )
+texture = SubResource( 3 )
+
+[node name="WaitInput" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true

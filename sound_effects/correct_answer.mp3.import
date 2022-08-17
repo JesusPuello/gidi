@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/correct_answer.mp3-358ab72de9958b570bccc69bdc466ae3.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/correct_answer.mp3"
+dest_files=[ "res://.import/correct_answer.mp3-358ab72de9958b570bccc69bdc466ae3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

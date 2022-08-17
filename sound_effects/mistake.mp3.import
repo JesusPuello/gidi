@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mistake.mp3-950e6700459a86fdabc7b787d05f8c5b.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/mistake.mp3"
+dest_files=[ "res://.import/mistake.mp3-950e6700459a86fdabc7b787d05f8c5b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

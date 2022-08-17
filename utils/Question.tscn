@@ -1,0 +1,188 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://fonts/Acme-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://utils/Options.gd" type="Script" id=2]
+[ext_resource path="res://utils/Question.gd" type="Script" id=3]
+[ext_resource path="res://utils/whiteboard.png" type="Texture" id=4]
+[ext_resource path="res://sound_effects/nivel_2.mp3" type="AudioStream" id=5]
+[ext_resource path="res://sound_effects/nivel_1.mp3" type="AudioStream" id=6]
+[ext_resource path="res://sound_effects/nivel_3.mp3" type="AudioStream" id=7]
+
+[sub_resource type="Theme" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 128
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="ImageTexture" id=3]
+
+[node name="QuestionBody" type="Node2D"]
+position = Vector2( 512, 300 )
+scale = Vector2( 2.5, 2.5 )
+script = ExtResource( 3 )
+expected_answer = "Respuesta numero 3"
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.666565, -19.7336 )
+rotation = 3.14159
+scale = Vector2( 0.590732, 0.379924 )
+texture = ExtResource( 4 )
+
+[node name="Question" type="CenterContainer" parent="."]
+margin_left = -61.6663
+margin_top = -32.4669
+margin_right = 2402.33
+margin_bottom = 397.533
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.05, 0.05 )
+theme = SubResource( 2 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Question"]
+position = Vector2( 106.666, 19.9991 )
+scale = Vector2( 9.2647, 5.23365 )
+polygon = PoolVector2Array( -14, -17, -14, 90, 258, 90, 258, 34.6719, 258, -17 )
+
+[node name="Label" type="Label" parent="Question"]
+margin_left = 426.0
+margin_top = 133.0
+margin_right = 2037.0
+margin_bottom = 296.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Este texto crece adecuadamente"
+align = 1
+valign = 1
+
+[node name="Option1" type="CenterContainer" parent="."]
+margin_left = -170.0
+margin_top = -4.80005
+margin_right = 2200.0
+margin_bottom = 812.2
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.05, 0.05 )
+theme = SubResource( 2 )
+script = ExtResource( 2 )
+
+[node name="Highlighted" type="Polygon2D" parent="Option1"]
+position = Vector2( 186.225, 196.386 )
+scale = Vector2( 8.06372, 5.66978 )
+color = Color( 0, 0.015625, 1, 1 )
+polygon = PoolVector2Array( -14, -17, -14, 90, 258, 90, 258, -17 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Option1"]
+position = Vector2( 234.069, 226.883 )
+scale = Vector2( 7.67157, 4.71861 )
+polygon = PoolVector2Array( -14, -17, -14, 90, 258, 90, 258, -17 )
+
+[node name="Label" type="Label" parent="Option1"]
+margin_left = 679.0
+margin_top = 327.0
+margin_right = 1691.0
+margin_bottom = 490.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Respuesta numero 1"
+align = 1
+valign = 1
+
+[node name="Option2" type="CenterContainer" parent="."]
+margin_left = -58.667
+margin_top = -4.80005
+margin_right = 2311.33
+margin_bottom = 812.2
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.05, 0.05 )
+theme = SubResource( 2 )
+script = ExtResource( 2 )
+
+[node name="Highlighted" type="Polygon2D" parent="Option2"]
+position = Vector2( 186.225, 196.386 )
+scale = Vector2( 8.06372, 5.66978 )
+color = Color( 0, 0.015625, 1, 1 )
+polygon = PoolVector2Array( -14, -17, -14, 90, 258, 90, 258, -17 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Option2"]
+position = Vector2( 234.069, 226.883 )
+scale = Vector2( 7.67157, 4.71861 )
+polygon = PoolVector2Array( -14, -17, -14, 90, 258, 90, 258, -17 )
+
+[node name="Label" type="Label" parent="Option2"]
+margin_left = 678.0
+margin_top = 327.0
+margin_right = 1690.0
+margin_bottom = 490.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Respuesta numero 1"
+align = 1
+valign = 1
+
+[node name="Option3" type="CenterContainer" parent="."]
+margin_left = 53.3315
+margin_top = -4.80005
+margin_right = 2423.33
+margin_bottom = 812.2
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.05, 0.05 )
+theme = SubResource( 2 )
+script = ExtResource( 2 )
+
+[node name="Highlighted" type="Polygon2D" parent="Option3"]
+position = Vector2( 186.225, 196.386 )
+scale = Vector2( 8.06372, 5.66978 )
+color = Color( 0, 0.015625, 1, 1 )
+polygon = PoolVector2Array( -14, -17, -14, 90, 258, 90, 258, -17 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Option3"]
+position = Vector2( 234.069, 226.883 )
+scale = Vector2( 7.67157, 4.71861 )
+polygon = PoolVector2Array( -14, -17, -14, 90, 258, 90, 258, -17 )
+
+[node name="Label" type="Label" parent="Option3"]
+margin_left = 678.0
+margin_top = 327.0
+margin_right = 1690.0
+margin_bottom = 490.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Respuesta numero 1"
+align = 1
+valign = 1
+
+[node name="Objeto" type="Sprite" parent="."]
+position = Vector2( -118.4, -39.8 )
+scale = Vector2( 0.35, 0.35 )
+texture = SubResource( 3 )
+
+[node name="level_1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+bus = "Voice"
+
+[node name="level_2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "Voice"
+
+[node name="level_3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+bus = "Voice"

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/new_zone.mp3-07c60a4e135a30fb1334521a7eee44ef.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/new_zone.mp3"
+dest_files=[ "res://.import/new_zone.mp3-07c60a4e135a30fb1334521a7eee44ef.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

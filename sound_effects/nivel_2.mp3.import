@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nivel_2.mp3-bda2a42b9030e6e391d5bfe001f892c6.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_2.mp3"
+dest_files=[ "res://.import/nivel_2.mp3-bda2a42b9030e6e391d5bfe001f892c6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
