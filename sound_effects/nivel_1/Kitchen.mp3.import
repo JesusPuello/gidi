@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Kitchen.mp3-b0dc5d0fa807c516b7e24a293c2befde.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_1/Kitchen.mp3"
+dest_files=[ "res://.import/Kitchen.mp3-b0dc5d0fa807c516b7e24a293c2befde.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

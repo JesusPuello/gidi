@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GuideTelevisor.mp3-be2c74d303951041229cbd45eb68d82e.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_3/GuideTelevisor.mp3"
+dest_files=[ "res://.import/GuideTelevisor.mp3-be2c74d303951041229cbd45eb68d82e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/aun_mejor.mp3-cb3cce82f98c926b3143acb4128b8c3c.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/victory_messages/aun_mejor.mp3"
+dest_files=[ "res://.import/aun_mejor.mp3-cb3cce82f98c926b3143acb4128b8c3c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

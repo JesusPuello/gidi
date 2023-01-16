@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/personaje.mp3-5fea2c68ac1616ca15e731a95ce980b9.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/introduction/personaje.mp3"
+dest_files=[ "res://.import/personaje.mp3-5fea2c68ac1616ca15e731a95ce980b9.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

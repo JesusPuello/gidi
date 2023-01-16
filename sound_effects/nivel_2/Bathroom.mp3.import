@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bathroom.mp3-e321f9a40e3aef4e3e079e80bbaa9684.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_2/Bathroom.mp3"
+dest_files=[ "res://.import/Bathroom.mp3-e321f9a40e3aef4e3e079e80bbaa9684.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

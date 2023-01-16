@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Volver_a_jugar.mp3-b53c6f0e9a801fab8dfe5a20d65c499e.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/general/Volver_a_jugar.mp3"
+dest_files=[ "res://.import/Volver_a_jugar.mp3-b53c6f0e9a801fab8dfe5a20d65c499e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

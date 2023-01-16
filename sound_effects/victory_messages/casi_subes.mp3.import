@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/casi_subes.mp3-0e55a76e19a899f2c6297bb818dd836a.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/victory_messages/casi_subes.mp3"
+dest_files=[ "res://.import/casi_subes.mp3-0e55a76e19a899f2c6297bb818dd836a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

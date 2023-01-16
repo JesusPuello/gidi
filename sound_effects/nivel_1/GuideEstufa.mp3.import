@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GuideEstufa.mp3-9c0ba9d23b7ac414f85362b393b263ee.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_1/GuideEstufa.mp3"
+dest_files=[ "res://.import/GuideEstufa.mp3-9c0ba9d23b7ac414f85362b393b263ee.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

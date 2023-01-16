@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Sofa.mp3-327c8934f6512cbc7b8e591b7a94091e.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_1/Sofa.mp3"
+dest_files=[ "res://.import/Sofa.mp3-327c8934f6512cbc7b8e591b7a94091e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

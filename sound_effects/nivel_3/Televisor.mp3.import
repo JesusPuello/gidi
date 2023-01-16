@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Televisor.mp3-e52a4eee0ea846159dc0434ff2297e9d.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_3/Televisor.mp3"
+dest_files=[ "res://.import/Televisor.mp3-e52a4eee0ea846159dc0434ff2297e9d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

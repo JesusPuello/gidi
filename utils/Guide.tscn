@@ -54,11 +54,14 @@ text = "Este texto crece adecuadamente"
 align = 1
 valign = 1
 
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="TextBody"]
+bus = "Voice"
+
 [node name="Objeto" type="Sprite" parent="."]
 position = Vector2( -118.4, -19.8 )
 scale = Vector2( 0.35, 0.35 )
 texture = SubResource( 3 )
 
 [node name="WaitInput" type="Timer" parent="."]
-wait_time = 4.0
+wait_time = 5.0
 one_shot = true

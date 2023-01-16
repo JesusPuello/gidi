@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Inodoro.mp3-1466a81537ac82ecfbecf24347f812a4.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_3/Inodoro.mp3"
+dest_files=[ "res://.import/Inodoro.mp3-1466a81537ac82ecfbecf24347f812a4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GuideTina.mp3-72702c2c175a85115406e202982375f4.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_1/GuideTina.mp3"
+dest_files=[ "res://.import/GuideTina.mp3-72702c2c175a85115406e202982375f4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

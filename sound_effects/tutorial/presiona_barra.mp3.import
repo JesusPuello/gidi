@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/presiona_barra.mp3-676df703964edc74fc68535d104de30e.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/tutorial/presiona_barra.mp3"
+dest_files=[ "res://.import/presiona_barra.mp3-676df703964edc74fc68535d104de30e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

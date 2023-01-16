@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GuideNevera.mp3-9a7dd063f0b2e3f4b59cfa4f044a0f36.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_2/GuideNevera.mp3"
+dest_files=[ "res://.import/GuideNevera.mp3-9a7dd063f0b2e3f4b59cfa4f044a0f36.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

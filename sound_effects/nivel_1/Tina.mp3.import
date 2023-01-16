@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tina.mp3-0c17cf8b8c53658f7aec783fbae3c49e.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_1/Tina.mp3"
+dest_files=[ "res://.import/Tina.mp3-0c17cf8b8c53658f7aec783fbae3c49e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -41,6 +41,9 @@ func play_new_zone():
 func play_victory():
 	$Victory.play()
 	
+func victory_playing():
+	return $Victory.playing or $Perfect.playing
+	
 func play_perfect():
 	$Perfect.play()
 

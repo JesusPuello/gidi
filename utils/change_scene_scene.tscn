@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://fonts/Acme-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://utils/AppearingText.tscn" type="PackedScene" id=2]
 [ext_resource path="res://utils/change_scene_scene.gd" type="Script" id=3]
 [ext_resource path="res://utils/GuideOrPlay.gd" type="Script" id=4]
+[ext_resource path="res://sound_effects/general/Aprender.mp3" type="AudioStream" id=5]
+[ext_resource path="res://sound_effects/general/Jugar.mp3" type="AudioStream" id=6]
 
 [sub_resource type="Theme" id=1]
 
@@ -148,3 +150,14 @@ align = 1
 valign = 1
 
 [node name="AppearingText" parent="." instance=ExtResource( 2 )]
+
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="."]
+bus = "Voice"
+
+[node name="GuideAudio" type="AudioStreamPlayer" parent="." groups=["options"]]
+stream = ExtResource( 5 )
+bus = "Voice"
+
+[node name="PlayAudio" type="AudioStreamPlayer" parent="." groups=["options"]]
+stream = ExtResource( 6 )
+bus = "Voice"

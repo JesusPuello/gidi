@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://backgrounds/Tutorial.tscn" type="PackedScene" id=1]
 [ext_resource path="res://character/Player.tscn" type="PackedScene" id=2]
@@ -9,6 +9,14 @@
 [ext_resource path="res://utils/AppearingText.tscn" type="PackedScene" id=7]
 [ext_resource path="res://character/utils/directionals.png" type="Texture" id=8]
 [ext_resource path="res://utils/spacebar.png" type="Texture" id=9]
+[ext_resource path="res://sound_effects/tutorial/moverte_flechitas.mp3" type="AudioStream" id=10]
+[ext_resource path="res://sound_effects/tutorial/acercate_lavamanos.mp3" type="AudioStream" id=11]
+[ext_resource path="res://sound_effects/tutorial/presiona_barra.mp3" type="AudioStream" id=12]
+[ext_resource path="res://sound_effects/tutorial/pregunta_2.mp3" type="AudioStream" id=13]
+[ext_resource path="res://sound_effects/tutorial/respuestas_correctas.mp3" type="AudioStream" id=14]
+[ext_resource path="res://sound_effects/tutorial/respuestas_incorrectas.mp3" type="AudioStream" id=15]
+[ext_resource path="res://sound_effects/tutorial/pregunta_1.mp3" type="AudioStream" id=16]
+[ext_resource path="res://sound_effects/tutorial/terminar_tutorial.mp3" type="AudioStream" id=17]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 35.0
@@ -287,6 +295,40 @@ juego real, ve al borde de
 la pantalla"
 align = 1
 valign = 1
+
+[node name="Audios" type="Node2D" parent="."]
+
+[node name="Directionals" type="AudioStreamPlayer" parent="Audios"]
+stream = ExtResource( 10 )
+bus = "Voice"
+
+[node name="GoToTarget" type="AudioStreamPlayer" parent="Audios"]
+stream = ExtResource( 11 )
+bus = "Voice"
+
+[node name="PressSpaceBar" type="AudioStreamPlayer" parent="Audios"]
+stream = ExtResource( 12 )
+bus = "Voice"
+
+[node name="Score" type="AudioStreamPlayer" parent="Audios"]
+stream = ExtResource( 14 )
+bus = "Voice"
+
+[node name="Mistakes" type="AudioStreamPlayer" parent="Audios"]
+stream = ExtResource( 15 )
+bus = "Voice"
+
+[node name="QuestionRead" type="AudioStreamPlayer" parent="Audios"]
+stream = ExtResource( 16 )
+bus = "Voice"
+
+[node name="QuestionRead2" type="AudioStreamPlayer" parent="Audios"]
+stream = ExtResource( 13 )
+bus = "Voice"
+
+[node name="FinishedTutorial" type="AudioStreamPlayer" parent="Audios"]
+stream = ExtResource( 17 )
+bus = "Voice"
 
 [connection signal="area_entered" from="NextArea" to="NextArea" method="_on_NextArea_area_entered"]
 [connection signal="body_entered" from="NextArea" to="NextArea" method="_on_NextArea_body_entered"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GuideComedor.mp3-c989b6e9738f3766f9b32cb21dbabd1f.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_3/GuideComedor.mp3"
+dest_files=[ "res://.import/GuideComedor.mp3-c989b6e9738f3766f9b32cb21dbabd1f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

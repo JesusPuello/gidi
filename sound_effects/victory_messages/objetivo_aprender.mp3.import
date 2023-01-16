@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/objetivo_aprender.mp3-f4b1cbe64b3753192cf51fee5b6c437f.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/victory_messages/objetivo_aprender.mp3"
+dest_files=[ "res://.import/objetivo_aprender.mp3-f4b1cbe64b3753192cf51fee5b6c437f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

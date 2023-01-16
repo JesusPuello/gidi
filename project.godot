@@ -20,6 +20,7 @@ PlayerVariables="*res://PlayerVariables.gd"
 Q_A="*res://Q_A.gd"
 Hud="*res://utils/HUD.tscn"
 Information="*res://Information.gd"
+Q_stats="*res://Q_stats.gd"
 
 [display]
 

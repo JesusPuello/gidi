@@ -28,9 +28,12 @@ func read_text():
 	for node in get_tree().get_nodes_in_group("texts"):
 		if node != curr_reading:
 			node.visible = false
+			$Audios.get_node(node.name).stop()
 	$AppearingText.triggerer = curr_reading.get_node("Label")
 	$AppearingText.execute_time()
-			
+	if PlayerVariables.voice_over:
+		$Audios.get_node(curr_reading.name).play()
+	
 func check_move():
 	if not moved and (Input.is_action_just_pressed("move_left") or Input.is_action_just_pressed("move_right")):
 		moved = true
@@ -59,16 +62,20 @@ func check_pressed_spacebar():
 		
 func pass_question_text():
 	if curr_reading == $QuestionRead and $AppearingText.read == true:
-		$Tutorial/ParallaxBackground/ParallaxLayer/QuestionBody.locked = false
+		$AppearingText/ReadAll.wait_time = 2
 		curr_reading = $QuestionRead2
 		read_text()
 		
 func question_answered():
-	if curr_reading == $QuestionRead2 and Input.is_action_just_pressed("action"):
-		question_answered = true
-		Hud.show()
-		curr_reading = $Score
-		read_text()
+	if curr_reading == $QuestionRead2:
+		if $AppearingText.read == true:
+			$Tutorial/ParallaxBackground/ParallaxLayer/QuestionBody.locked = false
+			if Input.is_action_just_pressed("action"):
+				question_answered = true
+				Hud.show()
+				$AppearingText/ReadAll.wait_time = 5
+				curr_reading = $Score
+				read_text()
 		
 func pass_score_to_mistakes():
 	if curr_reading == $Score and $AppearingText.read:

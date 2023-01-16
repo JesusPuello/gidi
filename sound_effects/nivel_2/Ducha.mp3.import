@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ducha.mp3-0fee21e78d7aaaef0d01b7af71fb5340.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_2/Ducha.mp3"
+dest_files=[ "res://.import/Ducha.mp3-0fee21e78d7aaaef0d01b7af71fb5340.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

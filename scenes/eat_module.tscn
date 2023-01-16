@@ -21,7 +21,6 @@ move_x = true
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 58, 445 )
 scale = Vector2( 3.2, 3.2 )
-gen = "Girl"
 
 [node name="Background" parent="." instance=ExtResource( 2 )]
 

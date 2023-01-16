@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Aprender.mp3-271a572295af693e8cc118142c088ecb.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/general/Aprender.mp3"
+dest_files=[ "res://.import/Aprender.mp3-271a572295af693e8cc118142c088ecb.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

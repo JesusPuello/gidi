@@ -74,4 +74,7 @@ valign = 1
 
 [node name="HTTPRequest" type="HTTPRequest" parent="."]
 
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="."]
+bus = "Voice"
+
 [connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]

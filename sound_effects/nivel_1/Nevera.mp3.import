@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Nevera.mp3-4c8fdf930ddaaccac5b489fed43a229b.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_1/Nevera.mp3"
+dest_files=[ "res://.import/Nevera.mp3-4c8fdf930ddaaccac5b489fed43a229b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

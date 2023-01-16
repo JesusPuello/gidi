@@ -96,6 +96,9 @@ text = "Respuesta numero 1"
 align = 1
 valign = 1
 
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="Option1"]
+bus = "Voice"
+
 [node name="Option2" type="CenterContainer" parent="."]
 margin_left = -58.667
 margin_top = -4.80005
@@ -133,6 +136,9 @@ text = "Respuesta numero 1"
 align = 1
 valign = 1
 
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="Option2"]
+bus = "Voice"
+
 [node name="Option3" type="CenterContainer" parent="."]
 margin_left = 53.3315
 margin_top = -4.80005
@@ -169,6 +175,9 @@ custom_fonts/font = SubResource( 1 )
 text = "Respuesta numero 1"
 align = 1
 valign = 1
+
+[node name="AudioPlayer" type="AudioStreamPlayer" parent="Option3"]
+bus = "Voice"
 
 [node name="Objeto" type="Sprite" parent="."]
 position = Vector2( -118.4, -39.8 )

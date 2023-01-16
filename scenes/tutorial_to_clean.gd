@@ -19,6 +19,7 @@ func _ready():
 func _on_NextArea_area_entered(area):
 	PlayerVariables.score = 0
 	PlayerVariables.mistakes = 0
+	Q_stats.objects["Lavamanos"] = 0
 	PlayerVariables.answered_questions = []
 	Hud.save_preferences()
 	$CollisionShape2D.set_deferred("disabled", true)

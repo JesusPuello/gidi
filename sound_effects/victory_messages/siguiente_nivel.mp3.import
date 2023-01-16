@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/siguiente_nivel.mp3-711edc98badfc73032932212eddeac9b.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/victory_messages/siguiente_nivel.mp3"
+dest_files=[ "res://.import/siguiente_nivel.mp3-711edc98badfc73032932212eddeac9b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

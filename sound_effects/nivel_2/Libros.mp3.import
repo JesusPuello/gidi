@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Libros.mp3-737ff57c46165557aae5e864b1b4ac2e.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_2/Libros.mp3"
+dest_files=[ "res://.import/Libros.mp3-737ff57c46165557aae5e864b1b4ac2e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

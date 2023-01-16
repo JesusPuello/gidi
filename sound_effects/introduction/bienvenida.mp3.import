@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bienvenida.mp3-b780119a2309c495ab25c0fb81eceb18.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/introduction/bienvenida.mp3"
+dest_files=[ "res://.import/bienvenida.mp3-b780119a2309c495ab25c0fb81eceb18.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

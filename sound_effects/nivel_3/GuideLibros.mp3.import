@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GuideLibros.mp3-67885b4e97e1dde0fe5376478d70edb1.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_3/GuideLibros.mp3"
+dest_files=[ "res://.import/GuideLibros.mp3-67885b4e97e1dde0fe5376478d70edb1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

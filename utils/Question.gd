@@ -25,7 +25,6 @@ func _ready():
 	$Option2.selected = true
 	$Option3.selected = false
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if not PlayerVariables.showing_menu:
@@ -52,13 +51,19 @@ func _process(delta):
 					if Input.is_action_just_pressed("move_right"):
 						if opt_number != 3:
 							get_node("Option" + str(opt_number)).selected = false
+							get_node("Option" + str(opt_number)).get_node("AudioPlayer").stop()
 							opt_number += 1
 							get_node("Option" + str(opt_number)).selected = true
+							if PlayerVariables.voice_over:
+								get_node("Option" + str(opt_number)).get_node("AudioPlayer").play()
 					if Input.is_action_just_pressed("move_left"):
 						if opt_number != 1:
 							get_node("Option" + str(opt_number)).selected = false
+							get_node("Option" + str(opt_number)).get_node("AudioPlayer").stop()
 							opt_number -= 1
 							get_node("Option" + str(opt_number)).selected = true
+							if PlayerVariables.voice_over: 
+								get_node("Option" + str(opt_number)).get_node("AudioPlayer").play()
 					if Input.is_action_just_pressed("action"):
 						Hud.play_select()
 						if get_node("Option" + str(opt_number)).get_node("Label").text == expected_answer:
@@ -68,6 +73,7 @@ func _process(delta):
 							triggerer.get_node("CollisionShape2D").disabled = true
 							PlayerVariables.answered_questions.append(triggerer.name)
 						else:
+							Q_stats.objects[triggerer.name] += 1
 							PlayerVariables.mistakes += 1
 							Hud.play_mistake()
 						Input.action_release("action")

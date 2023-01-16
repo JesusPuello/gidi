@@ -59,16 +59,16 @@ func _ready():
 		},
 		"2": {
 			"Tutorial": {
-				"Lavamanos": "Secarme las manos y cerrar la llave"
+				"Lavamanos": "Cerrar bien la llave luego \n de lavarme las manos"
 			},
 			"Bathroom": {
-				"Inodoro": "Lavarme las manos",
-				"Ducha": "Llevar la toalla",
-				"Lavamanos": "Secarme las manos y cerrar la llave"
+				"Inodoro": "Bajar el agua para \n dejarlo limpio",
+				"Ducha": "Llevar la toalla para \n secar mi cuerpo",
+				"Lavamanos": "Cerrar bien la llave luego \n de lavarme las manos"
 			},
 			"Kitchen": {
-				"Nevera": "Cerrar la puerta",
-				"Comedor": "Sentarme bien",
+				"Nevera": "Cerrar la puerta para \n mantener el frío adentro",
+				"Comedor": "Sentarme derechito para comer mejor",
 				"Estufa": "Si estoy cerca, evito tocar"
 			},
 			"LivingRoom": {
@@ -86,11 +86,11 @@ func _ready():
 				"Ducha": '"Me voy a bañar"'
 			},
 			"Kitchen": {
-				"Comedor": '"Tengo hambre"',
-				"Nevera": '"Tengo sed"'
+				"Comedor": '"Tengo hambre, quiero comer \n algo calentito"',
+				"Nevera": '"Tengo sed, quiero tomar \n algo frío"'
 			},
 			"LivingRoom": {
-				"Sofa": '"Estoy cansado"',
+				"Sofa": '"Estoy cansado, voy \n a recostarme"',
 				"Libros": '"Quiero leer"',
 				"Televisor": '"Quiero ver una película"'
 			}

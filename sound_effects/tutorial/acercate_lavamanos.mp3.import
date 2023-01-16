@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/acercate_lavamanos.mp3-5ad6c43734bb5816b80dae568582f992.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/tutorial/acercate_lavamanos.mp3"
+dest_files=[ "res://.import/acercate_lavamanos.mp3-5ad6c43734bb5816b80dae568582f992.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

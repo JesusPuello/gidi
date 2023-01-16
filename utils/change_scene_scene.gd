@@ -42,6 +42,16 @@ func show_text():
 	$AppearingText.triggerer = $ChangeSceneText/Label
 	$AppearingText/ReadAll.wait_time = 5
 	$AppearingText.execute_time()
+	var audio_file = "res://sound_effects/nivel_{difficulty}/{module}.mp3".format({ 
+		"difficulty" : PlayerVariables.curr_difficulty,
+		"module": PlayerVariables.curr_module
+		})
+	if File.new().file_exists(audio_file):
+		var sfx = load(audio_file)
+		sfx.set_loop(false)
+		$AudioPlayer.stream = sfx
+		if PlayerVariables.voice_over:
+			$AudioPlayer.play()
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -53,15 +63,21 @@ func _process(delta):
 		else:
 			moving = false
 			curr_section += 1
+			if PlayerVariables.voice_over:
+				$GuideAudio.play()
 	if not locked_section_2 and not moving:
 		if Input.is_action_just_pressed("move_left") and $Guide/Highlight.visible == false:
 			curr_option.get_node("Highlight").visible = false
 			curr_option = $Guide
 			curr_option.get_node("Highlight").visible = true
+			if PlayerVariables.voice_over:
+				$GuideAudio.play()
 		if Input.is_action_just_pressed("move_right") and $Play/Highlight.visible == false:
 			curr_option.get_node("Highlight").visible = false
 			curr_option = $Play
 			curr_option.get_node("Highlight").visible = true
+			if PlayerVariables.voice_over:
+				$PlayAudio.play()
 		if Input.is_action_just_pressed("action"):
 			curr_option.start()
 			locked_section_2 = true

@@ -49,34 +49,34 @@ func _ready():
 		},
 		"2": {
 			"Bathroom": {
-				"Inodoro": "Recuerda lavarte las manos después de usarme",
-				"Ducha": "Si no traes tu toalla, no podrás secarte",
-				"Lavamanos": "Siempre sécate las manos y recuerda cerrar la llave"
+				"Inodoro": "Recuerda bajar el agua \n para dejarme limpio",
+				"Ducha": "Si no traes tu toalla, no podrás secarte el cuerpo",
+				"Lavamanos": "Siempre cierra bien la llave luego \n de lavarte las manos, así cuidas el agua"
 			},
 			"Kitchen": {
-				"Nevera": "Si no me necesitas, cierra la puerta, por favor",
-				"Comedor": "Me encanta el orden, recuerda sentarte bien",
-				"Estufa": "Suelo estar muy caliente, evita tocarme si te acercas"
+				"Nevera": "Si no me necesitas, cierra la puerta \n para mantener el frío, por favor",
+				"Comedor": "Me encanta el orden, \n recuerda sentarte derechito",
+				"Estufa": "Suelo estar muy caliente, \n evita tocarme si te acercas"
 			},
 			"LivingRoom": {
-				"Televisor": "Apágame cuando no me uses, te lo dice el jefe",
-				"Libros": "Cuando nos lees, aprendes. ¡Hazlo más seguido!"
+				"Televisor": "Apágame cuando no me uses, \n te lo dice el jefe",
+				"Libros": "Cuando nos lees, aprendes. \n ¡Hazlo más seguido!"
 			}
 		},
 		"3": {
 			"Bathroom": {
 				"Inodoro": 'Si quieres usarme di: "Necesito ir al baño"',
 				"Lavamanos": 'Me encanta escuchar: "Quiero lavarme las manos"',
-				"Ducha": '"Me voy a bañar", palabras mágicas para usarme'
+				"Ducha": '"Me voy a bañar", \n palabras mágicas para usarme'
 			},
 			"Kitchen": {
-				"Comedor": 'Cuando me necesites di: "Tengo hambre"',
-				"Nevera": '"Tengo sed", dices tú; agua fría te doy yo'
+				"Comedor": 'Cuando me necesites di: "Tengo hambre, \n quiero comer algo calentito"',
+				"Nevera": '"Tengo sed", dices tú; algo frío te doy yo'
 			},
 			"LivingRoom": {
-				"Sofa": 'Si dices: "Estoy cansado", siempre te dejaré acostarte en mí',
-				"Libros": 'Qué bonito se escucha: "Quiero leer"',
-				"Televisor": '¿Dijiste: "Quiero ver una película"? ¿Cuál quieres?'
+				"Sofa": 'Si dices: "Estoy cansado", siempre te dejaré \n recostarte en mí',
+				"Libros": 'Qué bonito se escucha: \n "Quiero leer"',
+				"Televisor": '¿Dijiste: "Quiero ver una película"? \n ¿Cuál quieres?'
 			}
 		}
 	}

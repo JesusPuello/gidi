@@ -15,6 +15,7 @@ var target_position
 var speed
 var house_initial_scale
 var appear_speed
+var choose_played = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("Preferences retrieval attempt...")
@@ -34,8 +35,14 @@ func _ready():
 	$Boy/AnimatedSprite.flip_h = true
 	$AppearingText.triggerer = $Welcome/Label
 	$AppearingText.execute_time()
+	if PlayerVariables.voice_over:
+		$Welcome_audio.play()
 
 func section_2():
+	if not choose_played:
+		if PlayerVariables.voice_over:
+			$Character_audio.play()
+		choose_played = true
 	if Input.is_action_just_pressed("move_right"):
 		if !$Boy.is_selected:
 			selected = $Boy

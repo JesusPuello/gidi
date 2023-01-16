@@ -1,0 +1,94 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://fonts/Acme-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/report_screen.gd" type="Script" id=2]
+
+[sub_resource type="Theme" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 128
+outline_size = 4
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 0.635294, 0.8, 0.854902, 1 )
+polygon = PoolVector2Array( -36, -28, -34, 636, 1079, 633, 1074, -36 )
+
+[node name="Stats" type="CenterContainer" parent="."]
+margin_left = 362.0
+margin_right = 986.0
+margin_bottom = 215.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.5, 0.5 )
+theme = SubResource( 1 )
+
+[node name="Label" type="Label" parent="Stats"]
+margin_top = 26.0
+margin_right = 624.0
+margin_bottom = 189.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0.129412, 0.670588, 0.109804, 1 )
+custom_colors/font_outline_modulate = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Estadísticas:"
+align = 1
+valign = 1
+
+[node name="Report" type="CenterContainer" parent="."]
+margin_left = 5.0
+margin_top = 2.00002
+margin_right = 3093.0
+margin_bottom = 1572.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.33, 0.33 )
+theme = SubResource( 1 )
+
+[node name="Label" type="Label" parent="Report"]
+margin_left = 1544.0
+margin_top = 703.0
+margin_right = 1544.0
+margin_bottom = 866.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0.109804, 0.14902, 0.670588, 1 )
+custom_colors/font_outline_modulate = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 2 )
+align = 1
+valign = 1
+
+[node name="Instruction" type="CenterContainer" parent="."]
+margin_left = 11.0
+margin_top = 450.0
+margin_right = 3485.0
+margin_bottom = 945.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_scale = Vector2( 0.29, 0.29 )
+theme = SubResource( 1 )
+
+[node name="Label" type="Label" parent="Instruction"]
+margin_right = 3474.0
+margin_bottom = 495.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_colors/font_color = Color( 0.862745, 0.866667, 0.482353, 1 )
+custom_colors/font_outline_modulate = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Supervisor
+Se recomienda guardar este reporte tomando una captura de pantalla
+Al finalizar, presiona la barra espaciadora"
+align = 1
+valign = 1

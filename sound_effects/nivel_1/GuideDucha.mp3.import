@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GuideDucha.mp3-b8fe22bc8bb9be8c1123f7f7ac2c1e93.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_1/GuideDucha.mp3"
+dest_files=[ "res://.import/GuideDucha.mp3-b8fe22bc8bb9be8c1123f7f7ac2c1e93.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

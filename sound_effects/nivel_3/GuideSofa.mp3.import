@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GuideSofa.mp3-8b0cbb67021f4b3e8eaf1901ddb5200d.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_3/GuideSofa.mp3"
+dest_files=[ "res://.import/GuideSofa.mp3-8b0cbb67021f4b3e8eaf1901ddb5200d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

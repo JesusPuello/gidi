@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pregunta_1.mp3-1b1e06a93b04caa29b87bd5483cf34ca.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/tutorial/pregunta_1.mp3"
+dest_files=[ "res://.import/pregunta_1.mp3-1b1e06a93b04caa29b87bd5483cf34ca.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

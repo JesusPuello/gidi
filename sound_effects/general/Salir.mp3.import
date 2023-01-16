@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Salir.mp3-bbac099ce01c75019482b6a80ba2af9c.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/general/Salir.mp3"
+dest_files=[ "res://.import/Salir.mp3-bbac099ce01c75019482b6a80ba2af9c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

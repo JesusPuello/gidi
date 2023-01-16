@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Comedor.mp3-7d90d085ffd070cc30e9af45ae1e2343.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_2/Comedor.mp3"
+dest_files=[ "res://.import/Comedor.mp3-7d90d085ffd070cc30e9af45ae1e2343.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

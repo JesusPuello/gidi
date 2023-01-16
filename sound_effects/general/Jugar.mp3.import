@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Jugar.mp3-46b9593dbffe78c35077b1dee65ec41a.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/general/Jugar.mp3"
+dest_files=[ "res://.import/Jugar.mp3-46b9593dbffe78c35077b1dee65ec41a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

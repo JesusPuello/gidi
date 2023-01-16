@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/terminar_tutorial.mp3-9e8f9c10e6021f01275f7f4d5b49cb69.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/tutorial/terminar_tutorial.mp3"
+dest_files=[ "res://.import/terminar_tutorial.mp3-9e8f9c10e6021f01275f7f4d5b49cb69.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -38,6 +38,8 @@ func _process(delta):
 				if not time_running:
 					$WaitInput.start()
 					time_running = true
+					if PlayerVariables.voice_over:
+						$TextBody/AudioPlayer.play()
 				if $WaitInput.time_left == 0:
 					triggerer.answered = true
 					triggerer.get_node("Sprite").visible = false
@@ -45,6 +47,7 @@ func _process(delta):
 					move_out = true
 					time_running = false
 				if Input.is_action_just_pressed("action"):
+					$TextBody/AudioPlayer.stop()
 					$WaitInput.stop()
 					triggerer.answered = true
 					triggerer.get_node("Sprite").visible = false

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LivingRoom.mp3-38a54bac3fde6fdf9254255621ae336b.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_2/LivingRoom.mp3"
+dest_files=[ "res://.import/LivingRoom.mp3-38a54bac3fde6fdf9254255621ae336b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

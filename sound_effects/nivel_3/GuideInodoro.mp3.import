@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/GuideInodoro.mp3-86a5ca94cd8d275d1452134172f43d41.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_3/GuideInodoro.mp3"
+dest_files=[ "res://.import/GuideInodoro.mp3-86a5ca94cd8d275d1452134172f43d41.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

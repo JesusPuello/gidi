@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/moverte_flechitas.mp3-e1553aa74537b01b442100fc623e3e62.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/tutorial/moverte_flechitas.mp3"
+dest_files=[ "res://.import/moverte_flechitas.mp3-e1553aa74537b01b442100fc623e3e62.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

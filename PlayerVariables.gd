@@ -22,6 +22,7 @@ var tutorial_seen = false
 var curr_module
 var locked = false
 var voice_over = true
+var finished_game = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass

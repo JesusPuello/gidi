@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lavamanos.mp3-3f85c1845534d5ced8e22ce66199e021.mp3str"
+
+[deps]
+
+source_file="res://sound_effects/nivel_1/Lavamanos.mp3"
+dest_files=[ "res://.import/Lavamanos.mp3-3f85c1845534d5ced8e22ce66199e021.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
